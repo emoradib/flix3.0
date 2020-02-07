@@ -31,7 +31,7 @@ class MovieDetailsViewController: UIViewController {
         synopsisLabel.text = movie["overview"] as? String
         // Makes the synopsisLabel fit to the size of the label
         synopsisLabel.sizeToFit()
-        
+         
         let baseURL = "https://image.tmdb.org/t/p/w185"
         let posterPath = movie["poster_path"] as! String
         let posterURL = URL(string: baseURL + posterPath)
